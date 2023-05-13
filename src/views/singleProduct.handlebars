@@ -1,0 +1,21 @@
+<h1 class="text-center  mt-3">Detalle Producto {{this.title}}</h1>
+
+{{#if product}}
+        <div class="col">
+            <div class="card">
+            <img src={{product.thumbnail}} width="50" alt="producto"/>
+            <div class="card-body">
+                <h5 class="card-title">{{product.title}}</h5>
+                <p class="card-text">$ {{product.price}}</p>
+                <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+            </div>
+            </div>
+         </div>
+    {{else}}
+    <p>No se encontraron datos</p>
+{{/if}}
+
+
+<div class="text-center">
+    <a href="/products" class="btn btn-danger" > <-- Home</a>
+</div>
